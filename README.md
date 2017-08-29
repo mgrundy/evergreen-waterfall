@@ -1,5 +1,5 @@
-##waterfall.py##
-**a command line Evergreen waterfall.**
+## waterfall.py ##
+**A command line Evergreen waterfall.**
 
 
 *Created during MongoDB SkunkWorks some time in 2017*
@@ -8,7 +8,7 @@
 waterfall.py uses your .evergreen.yml for things like server addresses. default project names and authentication. It should work with a local Evergreen installation. It uses the rest api exclusively (Max, I finally understand what you meant).
 
 
-###Here are some examples:###
+### Here are some examples: ###
 
 
 - Default mode (only show variants that have failures, uses your evergreen config):
@@ -37,7 +37,7 @@ python waterfall.py -p mongodb-mongo-master -n 0 -d
 ~~~~
 - To specify a different project use -p. This example is a private project, so it uses the user name and api key in your evergreen config file
 ~~~~
-'python waterfall.py -s -p sqlproxy
+python waterfall.py -s -p sqlproxy
 ~~~~
 - You can also have it show all the build variants, regardless of failures (-a)
 ~~~~
